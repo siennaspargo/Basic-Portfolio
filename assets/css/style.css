@@ -1,21 +1,44 @@
-/* <style>
-.FloatNavLink {
-    background-color: white;
-    color: white;
-    padding: 10px;
-} 
-</style> */
-
-/* this above is the possible css for class element h1 = floatselect */
-
-
-/* possible css for aside element is 
-
-aside { 
-    display: block;
+body {
+   background-color: rgb(155, 115, 151)
 }
 
-*/
+header {
+    float: right;
+}
+
+div.container {
+    background-color: white;
+    color: rgb(95, 95, 95);
+    padding: 10px;
+} 
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: right;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+
+nav ul {
+    float: right;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+
+
+aside { 
+    display: border-right: 1px solid #000;
+}
+
+
 
 
 /* this CSS is copied and for the contact form in the contact.html */
