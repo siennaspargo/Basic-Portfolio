@@ -1,83 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Contact Page</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Contact | Basic Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
-<header> 
-    <div>
-            <div class="header">
-
-        <h1>
-            Sienna S. S.
-        </h1>
-        <ul>
-           
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Portfolio</a></li>
-
-        </ul>
-    
-    </div>
+    <header>
+        <div class="wrapper">
+            <h1>Sienna S. S.</h1>
+            <nav>
+                <ul>
+                    <a href="/index.html">About</a> |
+                    <a href="/portfolio.html">Portfolio</a> |
+                    <a href="/contact.html">Contact</a>
+                </ul>
+            </nav>
+        </div>
     </header>
-    
 
-    <div>
+    <div class="wrapper">
+        <section id="left-column">
+            <h2>Contact Me</h2>
+            <form action="action_page.php">
 
-     <div class="message">
-         <form action="action_page.php">
+                <label for="wholename">Name</label>
+                <input type="text" id="wholename" name="Name" placeholder="Your name ..">
 
-            <label for="wholename">Name</label>
-            <input type="text" id="wholename" name="Name" placeholder="Your name ..">
+                <label for="personsemail">Email</label>
+                <input type="text" id="personsemail" name="Email" placeholder="Your email ..">
 
-            <label for="personsemail">Email</label>
-            <input type="text" id="personsemail" name="Email" placeholder="Your email ..">
+                <label for "Message">Message</label>
+                <textarea id="formMessage" name="PMessage" placeholder="Write me a message .."></textarea>
 
-            <label for "Message">Message</label>
-            <textarea id="PMessage" name="PMessage" placeholder="Write me a message .." style="height:200px">
+                <button type="submit">Submit</button>
+            </form>
 
-        </textarea>
+        </section>
 
-            <input type="submit" value="Submit">
+        <aside id="right-column">
 
-         </form>
-    </div>
-
-    <div> 
-
-        <div class="icons">
-    
-        <aside>
-    
             <h3>Connect with Me</h3>
-            
-            <br>
-    
             <ul>
-                <li><a href="https://github.com/siennaspargo"><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/github_square_black-64.png" alt="githubicon"></a></li>
-                
-                <li><a href="https://www.linkedin.com/in/sienna-spargo-534703b8/"><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_square_color-64.png" alt="linkedinicon"></a></li>
-        
-                <li><a href="https://stackexchange.com/users/12700734/sienna-s"><img src="https://cdn2.iconfinder.com/data/icons/social-flat-buttons-3/512/overflow-64.png" alt="stackoverflowicon"></a></li>
-        
+
+                <li>
+                    <a href="https://github.com/siennaspargo">
+                        <img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/github_square_black-64.png" alt="githubicon">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.linkedin.com/in/sienna-spargo-534703b8/">
+                        <img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_square_color-64.png" alt="linkedinicon">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://stackexchange.com/users/12700734/sienna-s">
+                        <img src="https://cdn2.iconfinder.com/data/icons/social-flat-buttons-3/512/overflow-64.png" alt="stackoverflowicon">
+                    </a>
+                </li>
             </ul>
-    
         </aside>
-
     </div>
-</div>
 
-<footer>
+    <div class="clearfix"></div>
 
-    &copy; Copyright 2018 Sienna S. S.
+    <footer>
 
-</footer>
+        &copy; Copyright 2018 Sienna S. S.
+
+    </footer>
 
 </body>
-</html>
 
+</html>
