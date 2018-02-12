@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  background: #ccc;
+  background: url('./assets/images/') repeat;
 }
 
 header {
@@ -19,6 +19,16 @@ h1, h2, h3, h4, h5, h6 {
   padding: 25px 35px;
   display: inline-block;
   margin: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+header h1 {
+  background: #4aaaa5;
+  color: white;
+  display: inline-block;
+  padding: 30px;
+  font-size: 30px;
 }
 
 nav {
@@ -27,6 +37,64 @@ nav {
   width: 400px;
   padding: 15px;
   text-align: center;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav a {
+  color: #333;
+  font-size: 18px;
+  padding: 5px 15px;
+  border-right: 2px solid #4aaaa5;
+  text-decoration: none;
+  transition-duration: .5s;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+}
+
+nav ul li:last-child a {
+  border-right: none;
+  padding-right: none;
+}
+
+nav a:hover {
+  background: #4aaaa5;
+  color: white;
+}
+
+p {
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 18px;
+  display:block;
+}
+
+input, textarea {
+  width: 100%;
+  display: block;
+  margin: 5px 0 20px 0;
+  border: 2px solid #ccc;
+  padding: 10px;
+  font-size: 16px;
+}
+
+textarea {
+  height: 300px;
+}
+
+form button {
+  background: #4aaaa5;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 10px 0;
+  font-size: 18px;
+  border: none;
 }
 
 section {
@@ -64,6 +132,7 @@ footer {
 .clearfix {
   display: block;
   clear: both;
+  margin-bottom: 130px;
 }
 
 .inner-box {
@@ -87,6 +156,12 @@ header h1 {
 
 nav ul li {
   display: inline;
+}
+
+.clearfix {
+  display: block;
+  clear: both; 
+  margin-bottom: 130px;
 }
 
 
