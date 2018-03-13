@@ -37,6 +37,21 @@ header h1 {
   padding: 30px;
 }
 
+div {
+  max-width: 960px;
+}
+
+img {
+  display: inline-block;
+  margin-left: auto;
+  width: 50%;
+  border-radius: 8px;
+}
+img:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
 nav {
   float:right;
   /* display:inline; */
