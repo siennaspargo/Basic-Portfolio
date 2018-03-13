@@ -3,8 +3,8 @@
 }
 
 body {
-  margin: 0;
-  background: url('./assets/images/') repeat;
+  background-image: url("assets/images/real_cf_@2X.png");
+  background-repeat: repeat-y;
 }
 
 header {
@@ -13,27 +13,33 @@ header {
   background: white;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  background: teal;
-  color: white;
+h1  {
+  font-family: 'Sacramento', cursive;
+  font-size: 48px;
+}
+
+ h2, h3, h4, h5, h6 {
+  background:white;
+  color: black;
   padding: 25px 35px;
   display: inline-block;
   margin: 0;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Sacramento', cursive;
   font-weight: bold;
 }
 
 header h1 {
-  background: #4aaaa5;
-  color: white;
+  background: white;
+  color: rgb(102, 95, 95);
+  font-family: 'Sacramento', cursive;
+  font-size: 48px;
   display: inline-block;
   padding: 30px;
-  font-size: 30px;
 }
 
 nav {
   float:right;
-  display:inline;
+  /* display:inline; */
   width: 400px;
   padding: 15px;
   text-align: center;
@@ -60,7 +66,7 @@ nav ul li:last-child a {
 }
 
 nav a:hover {
-  background: #4aaaa5;
+  background: #aa4a82;
   color: white;
 }
 
@@ -145,18 +151,6 @@ footer {
   padding: 20px;
 }
 
-header h1 {
-  background: #4aaaa5;
-  color: white;
-  display: inline-block;
-  padding: 30px;
-  font-size: 30px;
-}
-
-
-nav ul li {
-  display: inline;
-}
 
 .clearfix {
   display: block;
@@ -174,11 +168,6 @@ nav a {
   transition-duration: .5s;
   transition-property: all;
   transition-timing-function: ease-in-out;
-}
-
-nav ul li:last-child a {
-  border-right: none;
-  padding-right: none;
 }
 
 nav a:hover {
@@ -325,4 +314,12 @@ form button {
   background: url('../images/port6.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+      background-color: rgb(173, 221, 230);
+  }
+
+  
 }
