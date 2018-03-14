@@ -61,7 +61,7 @@ img:hover {
 /* Floats nav bar to the right of the webpage */
 nav {
   float:right;
-  display:inline;
+  /* display:inline; */
   width: 400px;
   padding: 15px;
   text-align: center;
