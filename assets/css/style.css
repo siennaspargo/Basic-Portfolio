@@ -1,22 +1,29 @@
+/* appears to do nothing */
+
 * {
   box-sizing: border-box;
 }
+/* Doesn't work for some reason */
 
 body {
   background-image: url("assets/images/real_cf_@2X.png");
   background-repeat: repeat-y;
 }
 
+/* gives a header break line on each page */
 header {
   margin: 0 0 25px 0;
   border-bottom: 2px solid;
   background: white;
 }
 
-h1  {
+/* doesn't work? */
+/* h1  {
   font-family: 'Sacramento', cursive;
   font-size: 48px;
-}
+} */
+
+/* Styling for each h tag plus positioning, font which doesn't work?*/
 
  h2, h3, h4, h5, h6 {
   background:white;
@@ -28,96 +35,67 @@ h1  {
   font-weight: bold;
 }
 
-header h1 {
+ /* header h1 {
   background: white;
   color: rgb(102, 95, 95);
   font-family: 'Sacramento', cursive;
   font-size: 48px;
   display: inline-block;
   padding: 30px;
-}
+} 
+ */
 
-div {
-  max-width: 960px;
-}
 
+/* Gives img a rounded border as well as inline block positioning */
 img {
   display: inline-block;
-  margin-left: auto;
-  width: 50%;
   border-radius: 8px;
 }
+
+/* Flips the images being hovered over it  */
 img:hover {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
 
+/* Floats nav bar to the right of the webpage */
 nav {
   float:right;
-  /* display:inline; */
+  display:inline;
   width: 400px;
   padding: 15px;
   text-align: center;
 }
 
-nav ul li {
+/* nav ul li {
   display: inline;
 }
 
-nav a {
-  color: #333;
-  font-size: 18px;
-  padding: 5px 15px;
-  border-right: 2px solid #4aaaa5;
-  text-decoration: none;
-  transition-duration: .5s;
-  transition-property: all;
-  transition-timing-function: ease-in-out;
-}
 
 nav ul li:last-child a {
   border-right: none;
   padding-right: none;
 }
-
-nav a:hover {
+ */
+/* nav a:hover {
   background: #aa4a82;
   color: white;
-}
+} */
 
+/* Gives font size to p element on homepage */
 p {
   font-size: 16px;
   line-height: 22px;
   margin-bottom: 20px;
 }
 
-label {
+/* label {
   font-size: 18px;
   display:block;
-}
+} */
 
-input, textarea {
-  width: 100%;
-  display: block;
-  margin: 5px 0 20px 0;
-  border: 2px solid #ccc;
-  padding: 10px;
-  font-size: 16px;
-}
 
-textarea {
-  height: 300px;
-}
-
-form button {
-  background: #4aaaa5;
-  color: #fff;
-  padding: 10px 20px;
-  margin: 10px 0;
-  font-size: 18px;
-  border: none;
-}
-
+/* Positions the connect with me element aside the profile/paragraph section to the right side */
 section {
   width: 600px;
   float: left;
@@ -125,6 +103,7 @@ section {
   background: white;
 }
 
+/* Positions the contact me linkedin, stackOverFlow, Github links under the Connect with me */
 aside {
   width: 316px;
   float: right;
@@ -132,6 +111,7 @@ aside {
   padding: 20px;
 }
 
+/* Centers and creates a line break for the footer with styling on each page */
 footer {
   text-align: center;
   margin-top: 20px;
@@ -140,40 +120,22 @@ footer {
   padding: 40px;
 }
 
+/* Makes homepage profile image inline to text wrapped around it */
 .inline-img {
   float:left;
   margin: 0 15px 15px 0;
 }
 
+/* Centers the body of the p element and the profile photo on the homepage */
+/* Centers the container of the portfolio images and links on the portfolio page */
+/* Centers the Contact me box on the contact page */
 .wrapper {
   width: 960px;
   margin: 0 auto;
 }
 
-.clearfix {
-  display: block;
-  clear: both;
-  margin-bottom: 130px;
-}
 
-.inner-box {
-  display: inline-Block;
-  float: left;
-  height: 73px;
-  width: 250px;
-  margin-left: 100px;
-  text-align: center;
-  padding: 20px;
-}
-
-
-.clearfix {
-  display: block;
-  clear: both; 
-  margin-bottom: 130px;
-}
-
-
+/* Creates the vertical line break separaters between the nav bar links with effects */
 nav a {
   color: #333;
   font-size: 18px;
@@ -185,22 +147,25 @@ nav a {
   transition-timing-function: ease-in-out;
 }
 
+/* Creates a fade in fade out effect of color over the nav bar buttons */
 nav a:hover {
   background: #4aaaa5;
   color: white;
+  border-radius: 8px;
 }
 
-p {
+/* p {
   font-size: 16px;
   line-height: 22px;
   margin-bottom: 20px;
 }
-
-label {
+ */
+/* label {
   font-size: 18px;
   display:block;
-}
+} */
 
+/* For contact page: centers and stacks input/text areas one over the other */
 input, textarea {
   width: 100%;
   display: block;
@@ -210,10 +175,12 @@ input, textarea {
   font-size: 16px;
 }
 
+/* Creates large box for users to enter text into on contact page */
 textarea {
   height: 300px;
 }
 
+/* Gives color/effect to submit button on contact page */
 form button {
   background: #4aaaa5;
   color: #fff;
@@ -223,6 +190,7 @@ form button {
   border: none;
 }
 
+/* forces the links and images for Portfolio items to appear */
 .portfolio-item {
   position: relative; 
   margin-bottom: 20px;
@@ -231,25 +199,32 @@ form button {
   height: 250px;
 }
 
+/* aligns the portfolio img links flip flop style  */
 .portfolio-item:nth-of-type(even) {
   float: right;
 }
 
+/* Center and creates poloroid look for Portfolio Img links */
 .portfolio-item h4 {
-  background: #4aaaa5;
+  background: #4aaaa4;
   color: white;
   text-align: center;
   padding: 20px 0;
   width: 100%;
   position: absolute;
   bottom: 15px;
+  border-radius: 8px;
+
 }
 
 .clearfix {
   display: block;
   clear: both; 
-  margin-bottom: 130px;
+  margin-bottom: 130px; 
 }
+
+/* CSS Styling for Portfolio Page */
+/* Table styling for Portfolio items to sit within */
 
 #left-column, #right-column {
   background: white;
@@ -300,41 +275,44 @@ form button {
 
 }
 
+/* Cover Images for Portfolio links */
+
 #port1 {
-  background: url('../images/port1.jpg');
+  background: url('assets/images/phoenix.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
 #port2 {
-  background: url('../images/port2.jpg');
+  background: url('../images/phoenix.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
 #port3 {
-  background: url('../images/port3.jpg') ;
+  background: url('../images/phoenix.jpg') ;
   background-size: cover;
   background-repeat: no-repeat;
 }
 #port4 {
-  background: url('../images/port4.jpg') ;
+  background: url('../images/phoenix.jpg') ;
   background-size: cover;
   background-repeat: no-repeat;
 }
 #port5 {
-  background: url('../images/port5.jpg') ;
+  background: url('../images/phoenix.jpg') ;
   background-size: cover;
   background-repeat: no-repeat;
 }
 #port6 {
-  background: url('../images/port6.jpg');
+  background: url('../images/phoenix.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
 
+/* Bootstrap Responsive Layout sizing max width  */
+
 @media only screen and (max-width: 500px) {
   body {
-      background-color: rgb(173, 221, 230);
+      background-color: rgb(125, 182, 121);
   }
 
-  
 }
